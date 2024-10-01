@@ -1,0 +1,39 @@
+<!-- この文書がどのHTMLのバージョンで作成されているかを書く。 -->
+<!DOCTYPE html>
+<!-- いちばん外側の大きな箱であるhtml要素。 -->
+<html>
+  <!-- html要素の子要素にhead要素を書く。 -->
+  <head>
+    <!-- 文字コードはHTML文書の記述に必須。文字コードは、meta要素のcharset属性を使って書く。 -->
+     <meta charset="UTF-8">
+     <!-- タイトルはHTML文書の記述に必須。タイトルは、title要素に書く。 -->
+     <title>KISSA official website</title>
+
+     <!-- ページの概要文を書く。 どんな内容のページか簡潔に説明する文章を書く。概要文は、meta要素のname属性とcontent属性を使用して書く。-->
+     <meta name="description" content="ページの概要文を記述します。">
+
+     <!-- スマートフォンで表示したときに正しく表示させるための「viewport（ビューポート）」を設定する。viewportは、meta要素のname属性とcontent属性を使用して書く。ここでは、「表示領域の幅（width）を端末やブラウザの幅（device-width）に合わせて表示する」という設定を記述している。 -->
+     <meta name="viewport" content="width=device-width">
+
+     <!-- スマートフォンに表示するハンバーガーメニューを動作させるためのJavaScriptファイルへのリンクを記載。相対パスでjsフォルダのtoggle-menu.jsを指定している。 -->
+     <script src="./js/toggle-menu.js"></script>
+  </head>
+
+  <!-- html要素の子要素にbody要素を書く。 -->
+  <body>
+    <!-- ページの基本構造である「ヘッダー」、「メインエリア」、「フッター」 を記述する。-->
+    <!-- ヘッダー -->
+    <!-- class属性はCSSでスタイリングする際の目印になる。 -->
+    <header class="header">
+      <!-- スマートフォン表示の際にスタイリングをしやすくするためにheader要素の中にdiv要素を入れる。 -->
+      <div class="header-inner">
+      </div>
+    </header>
+
+    <!-- メインエリア -->
+    <main class="main"></main>
+
+    <!-- フッター -->
+    <footer class="footer"></footer>
+  </body>
+</html>
