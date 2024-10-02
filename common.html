@@ -56,6 +56,30 @@
     <main class="main"></main>
 
     <!-- フッター -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <nav class="site-menu">
+            <!-- ナビゲーションの項目を、ul要素を使ってリストとして指定する。（「ul」は「Unordered List」の略。箇条書きなど順序のないリストを作成する際にul要素を使用する。） -->
+            <ul>
+              <!-- リストの各項目はli要素で指定する「入れ子構造」になっている。 -->
+              <li><a href="./concept.html">CONCEPT</a></li>
+              <li><a href="./menu.html">MENU</a></li>
+              <li><a href="./shop.html">SHOP</a></li>
+              <li><a href="./access.html">ACCESS</a></li>
+            </ul>
+      </nav>
+
+      <!-- トップページへのリンクをフッターのロゴ画像に張る。 -->
+      <a class="footer-logo" href="./index.html">
+        <!-- フッターのロゴ画像を挿入する。 -->
+        <img src="./images/common/logo-footer.png" alt="KISSA">
+      </a>
+      <p class="footer-tel">TEL 01-2345-6789</p>
+      <p class="footer-time">OPEN Fri-Sun 11:00-16:00</p>
+
+      <!-- コピーライトのように本文と比べて重要ではない情報を掲載する際は、
+       small要素で囲み、テキストが伝える意味合いを弱める。
+       「&copy」は、コピーライトを表す特殊文字をHTMLで入力する際に、「文字参照」を使って書いた書き方。 -->
+      <p class="copyright"><small>&copy;Kissa</small></p>
+      </footer>
   </body>
 </html>
