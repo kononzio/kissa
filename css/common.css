@@ -199,10 +199,57 @@ img {
     padding-left: 20px;
 
     height: 100%;             /* ヘッダーコンテンツの高さが、親要素に収まるようにする */
-
+    position: relative;       /* ナビゲーションメニューの親要素である「header-inner」クラスの要素に、親要素を基準として子要素である「header-site-menu」クラスの位置を指定するように設定する。 */
   }
 
   .header-logo {
     width: 100px
+  }
+
+  .header-site-menu {
+    
+    position: absolute;       /* 親要素に対しての位置を指定するために「absolute」をpositionプロパティに指定する */
+
+    /* 「header-site-menu」クラスの要素を親要素から飛び出すように表示するために、位置を指定する。 */
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    /* 文字色と背景色を指定。（背景を黒めの色に設定することで、PC用のレイアウトに表示されていたフッターのメニューが消える。） */
+    color: #ffffff;
+    background-color: #736E62;
+
+    /* 上下の余白を設定。 */
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    /* header-site-menuを非表示にする。 */
+    display: none;
+  }
+
+  .header-site-menu.is-show {
+    /* ハンバーガーメニューのボタンをクリックするたびに、ナビゲーションメニューの表示・非表示を切り替える。 */
+    display: block;
+  }
+
+  .toggle-menu-button {
+
+    display: block;       /* flex（横並び）を初期値のblockにしているだけだが、これだけで四角い小さなボックスがハンバーガーメニューの場所に表示される。 */
+
+    /* ハンバーガーメニューのサイズを指定する。 */
+    width: 44px;
+    height: 34px;
+
+    /* ハンバーガーメニューの背景画像のパスを指定する。 */
+    background-image: url(../images/common/icon-menu.png);
+
+    background-size: 50%;             /* 背景画像のサイズを指定する。 */
+    background-position: center;      /* 背景画像の位置を中央にする。 */
+    background-repeat: no-repeat;     /* 背景画像の繰り返しを解除。 */
+
+    background-color: transparent;    /* 背景画像を投下させる。 */
+    border: none;                     /* 要素の枠を消す。 */
+    border-radius: 0;                 /* 角丸を解除。 */
+    outline: none;                    /* タップしたときに表示される枠を消す。 */
   }
 }
