@@ -161,4 +161,48 @@ img {
 表示するか、という閾値）を設定する。 */
 @media (max-width: 800px) {
   /* ここに書いたスタイルはブラウザの表示幅が 800px 以下の場合のみ適用される。 */
+
+  .site-menu ul {
+
+    display: block;           /* PC用レイアウトでは、displayプロパティの値を「flex」に指定していたが、モバイル用レイアウトでは、縦並び（初期値である「block」にする。 */
+
+    text-align: center;       /* ナビゲーションメニューの文字を中央揃えにする。 */
+
+    margin-top: 20px;
+  }
+
+  .header {
+
+    position: fixed;          /* ヘッダーをサイトのページ上部に固定する。 */
+
+    /* ブラウザの枠を基準に、固定する場所の位置を指定する。 */
+    top: 0;
+    left :0;
+    right: 0;
+
+    background-color: #ffffff;
+    height: 50px;
+
+    z-index: 10;              /* ヘッダーを常に最前面に表示。z-indexプロパティは、要素の重ね順を指定する。数値が大きいほど手前になる。
+    ただし、背景色（白）のレイヤが手前に来るわけではなさそう・ */
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);   /* ヘッダー領域に薄い影をつける */
+  }
+
+
+  .header-inner {
+
+    /* 余白の設定 */
+    /*ブラウザの横幅が縮まる（モバイル用レイアウトのため）ので、併せて余白のサイズを縮小。（PC用レイアウトでは40px。 */
+
+    padding-left: 20px;
+    padding-left: 20px;
+
+    height: 100%;             /* ヘッダーコンテンツの高さが、親要素に収まるようにする */
+
+  }
+
+  .header-logo {
+    width: 100px
+  }
 }
