@@ -100,6 +100,12 @@ img {
 .site-menu ul li {
   margin-left: 20px;   /* ナビゲーションメニューの要素間に余白を設定 */
   margin-right: 20px;
+
+  /* Google fontでインストールしたフォントの設定 */
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+
 }
 
 /* フッターのスタイル。 */
@@ -149,10 +155,4 @@ img {
   font-size: 14px;
   font-weight: bold;
   margin-top: 90px;
-}
-
-.site-menu ul li {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
 }
