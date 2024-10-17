@@ -150,3 +150,9 @@ img {
   font-weight: bold;
   margin-top: 90px;
 }
+
+.site-menu ul li {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+}
