@@ -43,3 +43,110 @@ body {
 img {
   max-width: 100%;              /* 最大幅を親要素の範囲内に収まるように設定。 */
 }
+
+/* ヘッダーのスタイル */
+
+/* クラス属性がheader-innerの要素に対して、同じdiv要素の中でも個別のスタイルを設定する。これを行うには「クラスセレクタ」を使う。「.クラス名」の形で記述する。 */
+
+.header-inner {
+
+  /* 要素のサイズを指定。 */
+
+  max-width: 1200px;            /* レスポンシブデザインで幅をmax-widthで指定するとブラウザの幅に合わせて可変になる */
+  /* ただし、親要素のheader要素の幅を指定しないと、header要素のサイズがheader-innerクラスのdiv要素より幅が広い場合、それぞれの要素でたとえば背景色が異なる場合は、ブラウザの横幅の途中までしかheader-innerクラスのdiv要素の背景色が反映されない。 */
+
+  height: 110px;              /* 要素のサイズをheightで指定。 */
+
+  /* 要素を中央揃えで表示する。 */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* 余白の設定 */
+  /*ブラウザの横幅を縮めると、ブラウザの左右の辺から要素にかけての余白がなく、窮屈に見えるので余白を指定する。 */
+  padding-left: 40px;
+  padding-left: 40px;
+
+  /* ヘッダーの右側にメニューを表示（要素を横並びにする） */
+  display: flex;
+
+  /* ヘッダーの要素を均等に配置し、最初の要素を先頭（左端）に、最後の要素を末尾（右端）に寄せる。（justify-contentプロパティの値をspace-between に指定）*/
+  justify-content: space-between;
+  /* 横並びの配置の長際はjustify-contentでおこなう */
+
+
+  /* 横並びとクロスする方向（ここでは縦方向）の配置を制御する（align-itemsプロパティ） */
+  align-items: center;      /* ロゴとメニューを天地中央で揃える */
+}
+
+/* モバイル表示の場合に表示させるハンバーガーメニューをいったん非表示。 */
+.toggle-menu-button {
+  display: none;
+}
+
+/* ヘッダーのロゴのスタイル。 */
+.header-logo {
+  display: block;     /* ロゴ画像は、a要素（インライン要素）でマークアップされているため、幅の指定ができない。
+  displayプロパティに「block」を指定して、幅の指定ができるようにする。 */
+
+  width: 170px;
+}
+
+/* ナビゲーションエリアのスタイル。 */
+.site-menu ul{
+  display: flex;      /* ナビゲーションメニューを作っているul要素を横並びにする */
+}
+
+/* ナビゲーションメニューのスタイル */
+.site-menu ul li {
+  margin-left: 20px;   /* ナビゲーションメニューの要素間に余白を設定 */
+  margin-right: 20px;
+}
+
+/* フッターのスタイル。 */
+.footer {
+  color: #ffffff;               /* テキストの色を白にする */
+  background-color: #24211b;    /* 背景色を指定 */
+
+  padding-top: 30px;              /* footer要素の内側の余白を設定 */
+  padding-bottom: 15px;
+
+  display: flex;                  /* footer要素（footerクラス）を構成する要素をいったん横並びにする */
+  flex-direction: column;         /* displayプロパティにflexを指定した要素内の配置を縦並びにする */
+
+
+
+  /* footer要素（footerクラス）全体の配置を指定する。 */
+
+  align-items: center; /* align-itemsプロパティでflex-direction（flexの方向）とクロス（直交）する向きの配置を指定する。
+   ここでは、flex-directionをcolumn（縦）に指定しているので、横方向の配置を真ん中（center）に指定する。 */
+}
+
+/* フッターロゴのスタイル */
+.footer-logo {
+  display: block;     /* ロゴ画像は、a要素（インライン要素）でマークアップされているため、幅の指定ができない。
+  displayプロパティに「block」を指定して、幅の指定ができるようにする。 */
+
+  width: 235px;
+  margin-top: 90px;   /* footer要素の外側（上）の余白を設定 */
+
+}
+
+/* 電話番号のスタイル。 */
+.footer-tel {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 28px;
+}
+
+/* 営業時間のスタイル。 */
+.footer-time {
+  font-size: 13px;
+  margin-top: 16px;
+}
+
+/* コピーライトのスタイル。 */
+.footer-tel {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 90px;
+}
