@@ -71,7 +71,7 @@ img {
 
   /* ヘッダーの要素を均等に配置し、最初の要素を先頭（左端）に、最後の要素を末尾（右端）に寄せる。（justify-contentプロパティの値をspace-between に指定）*/
   justify-content: space-between;
-  /* 横並びの配置の長際はjustify-contentでおこなう */
+  /* 横並びの配置の調整はjustify-contentでおこなう */
 
 
   /* 横並びとクロスする方向（ここでは縦方向）の配置を制御する（align-itemsプロパティ） */
