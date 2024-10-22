@@ -252,4 +252,22 @@ img {
     border-radius: 0;                 /* 角丸を解除。 */
     outline: none;                    /* タップしたときに表示される枠を消す。 */
   }
+
+  .main {
+    /* main要素の上部に余白を作る */
+    padding-top: 50px;
+  }
+
+  .footer-logo {
+    /* フッターロゴの上部に余白を小さめに設定。 */
+    margin-top: 60px;
+  }
+
+  .footer-tel {
+    font-size: 20px;
+  }
+
+  .copyright {
+    margin-top: 50px;
+  }
 }
