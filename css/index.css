@@ -2,4 +2,12 @@
 
 .first-view {
   height: calc(100vh - 110px);    /* ヘッダーエリアの高さの分、ファーストビューエリアの高さが100vhだと、ファーストビューエリアの下辺がブラウザの下辺より下になるため、ヘッダーの高さの110pxを引いた高さにheightを指定する。 */
+
+  background-image: url(../images/index/bg-main.jpg);             /* 背景画像を設定する。 */
+
+  background-repeat: no-repeat;     /* 背景画像の繰り返しを無効にする。 */
+
+  background-position: center center;           /* 背景画像がデフォルトで左上を基準にして挿入されているため、background-positionプロパティを使用して、上下ともに画像の中央部分を配置するように指定する。 */
+
+  background-size: cover;       /* 画像のサイズがブラウザのサイズを超えているため、ブラウザのサイズに合わせて下辺になるように指定する。 */
 }
