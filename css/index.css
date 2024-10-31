@@ -10,4 +10,18 @@
   background-position: center center;           /* 背景画像がデフォルトで左上を基準にして挿入されているため、background-positionプロパティを使用して、上下ともに画像の中央部分を配置するように指定する。 */
 
   background-size: cover;       /* 画像のサイズがブラウザのサイズを超えているため、ブラウザのサイズに合わせて下辺になるように指定する。 */
+
+  display: flex;      /* ファーストビューの各要素を横並びにする。 */
+
+  align-items: center;        /* ファーストビューの上下の位置を天地中央に配置する。 */
+}
+
+/* 見出しとキャッチコピーエリアのスタイルを指定する。 */
+.first-view-text {
+  width: 100%;              /* 親要素の幅いっぱいに要素の幅を指定する。 */
+
+  max-width: 1200px;        /* ヘッダーエリアと同じ最大幅を指定する。 */
+
+  margin-left: auto;
+  margin-right: auto;
 }
