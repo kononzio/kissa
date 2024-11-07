@@ -24,4 +24,24 @@
 
   margin-left: auto;
   margin-right: auto;
+
+  padding-left: 40px;       /* 少し右に移動 */
+  padding-bottom: 80px;     /* 少し上に移動 */
+  color: #ffffff;         /* テキストの色を白に指定。 */
+  font-weight: bold;        /* テキストを太字にする。 */
+
+  text-shadow: 1px 1px 10px #4b2c14;    /* テキストに影を付ける。（値は、左右、上下、ぼかし、色の順に指定する） */
+}
+
+/* 見出しのスタイルを指定する。 */
+.first-view-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  line-height: 72px;
+}
+
+/* キャッチコピーのスタイルを指定する。 */
+.first-view-text p {
+  font-size: 18px;
+  margin-top: 20px;
 }
