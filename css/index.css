@@ -75,3 +75,15 @@
 .link-button:hover {          /* HTMLタグで「マウスをおいた時の要素」を表すタグはないため、疑似クラス（この場合は「:hover」）を使う。 */
   background-color: #d8b500;
 }
+
+/* ブレイクポイント（ブラウザ幅に応じたレスポンシブデザインで、レイアウトをPC用とモバイル用のどちらで
+表示するか、という閾値）を設定する。 */
+@media (max-width: 800px) {
+  
+  .first-view {
+    height: calc(100vh - 50px);     /* ファーストビューエリアの高さが100vhだと、ファーストビューエリアの下辺がリード文の上辺より下になるため、heightを50pxを引いた高さに指定する。 */
+
+    /* ファーストビューエリアの背景画像をモバイル用の画像にする。 */
+    background-image: url(../images/index/bg-main-sp.jpg);
+  }
+}
