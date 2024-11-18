@@ -11,8 +11,6 @@
 
   background-size: cover;       /* 画像のサイズがブラウザのサイズを超えているため、ブラウザのサイズに合わせて下辺になるように指定する。 */
 
-  display: flex;      /* ファーストビューの各要素を横並びにする。 */
-
   align-items: center;        /* ファーストビューの上下の位置を天地中央に配置する。 */
 }
 
@@ -33,15 +31,42 @@
   text-shadow: 1px 1px 10px #4b2c14;    /* テキストに影を付ける。（値は、左右、上下、ぼかし、色の順に指定する） */
 }
 
-/* 見出しのスタイルを指定する。 */
-.first-view-text h1 {
+.first-view-text h1 { /* 見出しのスタイルを指定する。 */
   font-family: 'Montserrat', sans-serif;
   font-size: 56px;
   line-height: 72px;
 }
 
-/* キャッチコピーのスタイルを指定する。 */
-.first-view-text p {
+.first-view-text p {  /* キャッチコピーのスタイルを指定する。 */
   font-size: 18px;
   margin-top: 20px;
+}
+
+/* 導入文のスタイルを指定する。 */
+.lead {
+  max-width: 1200px;    /* ヘッダーと同じ1200px。 */
+  margin: 60px auto;    /* 上下のマージンを60px、左右をautoにする。 */
+}
+
+.lead p {               /* 導入文のp要素（段落）のスタイルを指定する。 */
+  line-height: 2;       /* 行間 */
+  text-align: center;   /* 中央寄せ */
+}
+
+/* リンクボタンのスタイルを指定する。 */
+.link-button-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.link-button {
+  background-color: #f4dd64;
+
+  display: inline-block;      /* a要素はデフォルトでインライン要素となっておりwidthによる幅指定ができないので、
+  displayプロパティを使って「inline-block」に変更。 */
+  min-width: 180px;            /* ボタンの幅 */
+  line-height: 48px;           /* ボタンの高さ */
+  border-radius: 24px;        /* リンクボタンの角を丸くする。 */
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 14px;
 }
