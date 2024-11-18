@@ -67,6 +67,11 @@
   min-width: 180px;            /* ボタンの幅 */
   line-height: 48px;           /* ボタンの高さ */
   border-radius: 24px;        /* リンクボタンの角を丸くする。 */
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: 'Montserrat', 'sans-serif';    /* Google フォントを使用する。 */
   font-size: 14px;
+}
+
+/* マウスをリンクボタンにおいたときのスタイルを指定する。 */
+.link-button:hover {          /* HTMLタグで「マウスをおいた時の要素」を表すタグはないため、疑似クラス（この場合は「:hover」）を使う。 */
+  background-color: #d8b500;
 }
